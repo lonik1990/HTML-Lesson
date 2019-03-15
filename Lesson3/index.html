@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" /><!-- кодировка-->
+        <title>Forms</title> 
+
+        <link rel="stylesheet" type="text/css" href="style.css"><!-- показываем, что хотим подключить css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+              
+    </head>    
+    
+    <body>
+        <form action="https://ya.ru" method="GET" > <!-- куда  мы отправляем запрос, если метод GET,то данные в адресной строке будут отображаться, если метод POST, то будут скрыты-->
+
+            <input name="name" type="text"/> <!-- ячейка формы записи текста-->
+            <input type="number" name="count"/><!-- ячейка формы записи только чисел-->
+            
+            <select name="country"><!-- выпадающий список-->
+                
+                <option value="1"  >Gonduras</option><!-- value это идентификатор того,что отправит на сервер, когда выберется страна-->
+                <option value="2" selected>UGANDA</option><!-- selected указывает ,что будет отображаться первым-->
+                <option value="3" >Kosta-Rika</option>
+            </select>
+
+            <input type="submit" value="Отправить" /><!-- кнопка отправки-->
+        </form>
+
+    </body>
+</html>

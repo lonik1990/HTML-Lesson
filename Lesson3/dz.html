@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" /><!-- кодировка-->
+        <title>Forms</title> 
+    </head>    
+    
+    <body>
+        <p> Google search!</p>
+        <form action="https://google.com/search" method="GET" > 
+            <input name="q" type="стол письменный"/> <!-- ячейка формы записи текста-->
+        <p> Количество результатов на странице 
+            <input type="number" name="num"/> 
+        </p>
+            
+        <p>Язык интерфейса 
+        <select name="country">
+        <option lang="be">Belarus</option>
+        </select>
+        </p>
+
+        <input type="submit" value="Search!"/><!-- кнопка отправки-->
+        </form>
+
+    </body>
+</html>
