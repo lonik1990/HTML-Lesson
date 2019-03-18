@@ -1,0 +1,86 @@
+/* селектор по идентификатору (свойства применяются для id=block, написанному в HTML */
+#block {
+    color:red;
+    background: gray;
+}
+
+/* селектор по классу */
+.my-class {
+    color:gray;
+    margin-left:10px ;
+    
+    
+}
+/* выборка по элементам, распространяется на все "p", если они не описаны в идентификаторе, в данном случае block*/
+p{
+   color: pink;
+}
+
+/* присвоение свойств группе */
+p, button {
+    border: 1px solid black;
+}
+
+/* если разделяем пробелом, то применится только к тегам <р>, которые лежат внутри тега <div>  */
+div p {
+    background: yellow;
+}
+
+/* если жестко задаем, что для всех р, находящихся внутри div  */
+div > p {
+    font-size: 40px;
+}
+
+/* применим для всех button , которые после тега div*/
+div + button {
+    padding: 8px;
+}
+
+
+/* применим для всех p , которые перед элементами с классом my-class УТОЧНИТЬ?????*/
+.my-class ~ p {
+    font-weight: 600;
+    font-size: 80px;
+}
+
+/* для всех тегов <а> с атрибутом href */
+a[href] {
+    color:deeppink;
+}
+
+/* для определенного тега <а> с атрибутом href */
+a[href="https://www.google.com"] {
+    font-size: 26px;
+}
+
+/* ищет элементы и в теге <a>  и применяет к ним свойства */
+a[name~=ru] {
+    background: black;
+}
+
+
+/* для всех <a> с атрибутом href, заканчивающимся на .ru */
+a[href$=".ru"] {
+    cursor: help;
+}
+
+/* для всех http задает свойства */
+a[href^="https"] {
+    margin: 20px;
+}
+
+/* для посещенной ссылки, меняет цвет после посещения */
+a:visited {
+    color: green;
+}
+
+
+/* увеличивается область, куда наводим*/
+#block:hover {
+    padding: 16px;
+    transition:  100ms;
+}
+
+.weather{
+     display: inline-block;
+}
