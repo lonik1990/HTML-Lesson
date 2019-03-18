@@ -8,18 +8,20 @@
     <body>
         <p> Google search!</p>
         <form action="https://google.com/search" method="GET" > 
-            <input name="q" type="стол письменный"/> <!-- ячейка формы записи текста-->
+            <input name="q" type="text"/> <!-- ячейка формы записи текста-->
         <p> Количество результатов на странице 
-            <input type="number" name="num"/> 
+            <input name="num" type="number" /> 
         </p>
             
-        <p>Язык интерфейса 
-        <select name="country">
-        <option lang="be">Belarus</option>
+        Язык интерфейса 
+        <select name="hl">
+              <option value="be" selected>Belarusian</option>
+              <option value="ru">Russian</option>
+              <option value="en">English</option>
         </select>
         </p>
 
-        <input type="submit" value="Search!"/><!-- кнопка отправки-->
+        <input type="submit" value="Отправить"/><!-- кнопка отправки-->
         </form>
 
     </body>
