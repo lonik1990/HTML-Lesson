@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    padding: 20px;
+}
+
+#con1{
+    width: 150px;
+    border: 2px solid black;
+    
+    height: 235px;
+    
+	border-radius: 10px;
+	background-color: rgb(222, 115, 195);
+	margin: 2px;
+	box-shadow: 3px 3px 3px #999;
+	
+}
+
+#con2{
+    width: 150px;
+    border: 2px solid green;
+    
+    height: 235px;
+	border-radius: 10px;
+	background-color: rgb(22, 15, 195);
+	margin: 2px;
+    box-shadow: 3px 3px 3px #999;
+ 
+ 
+
+}
+	
+	
+
+#con3{
+    width: 150px;
+    border: 2px solid red;
+    
+    
+    height: 235px;
+	border-radius: 10px;
+	background-color: rgb(2, 195, 195);
+	margin: 2px;
+	box-shadow: 3px 3px 3px #999;
+	
+}
+#con4{
+    width: 150px;
+    border: 2px solid pink;
+    
+   
+    height: 235px;	
+	border-radius: 10px;
+	background-color: rgb(212, 191, 15);
+	margin: 2px;
+	box-shadow: 3px 3px 3px #999;
+	
+	
+}
+
+#rr{
+    width: 148px;
+    background-color: rgb(222, 115, 195);
+	border-radius: 10px; 
+}
+
+#rrr{
+    width: 150px;
+    background-color: rgb(22, 15, 195);
+	border-radius: 10px; 
+	color: white;
+}
+#rrrr{
+    width: 150px;
+    background-color: rgb(2, 195, 195);
+	border-radius: 10px; 
+}
+#rrrrr{
+    width: 150px;
+    background-color: rgb(212, 191, 15);
+	border-radius: 10px; 
+	color:gray;
+}
+
+#vrema {
+  text-shadow: 1px 1px 0px black,
+               6px 2px 0px rgba(0,0,0,0.2);
+  color: white;
+  transition: all .5s;
+  
+  }
+  
+  #temp{
+	font-style: italic; 
+	}
+
