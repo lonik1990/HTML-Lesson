@@ -1,0 +1,39 @@
+.title{
+    font-family: 'Times New Roman', Times, serif; /* шрифт */
+    font-size: 30px; /* размер шрифта */
+    font-style: italic; /* стиль шрифта */
+    font-weight: 10px; /* вес шрифта, но некоторые шрифты могут не поддерживать вес  */
+    text-decoration: underline; /* подчеркнутый текст */
+    color: red; /*цвет может быть записан 3мя способами 1.(red,green), 2.FF434F, 3.rgb( , , )   */
+    color: rgb(255, 0, 0, 1); /* цвет текста с прозрачностью */
+    text-align: start;  
+
+    padding: 16px; /* со всех сторон */
+    padding: 160px 555px 36px 8px; /* отступ сверху,справа,снизу,слева */
+    padding-top: 30px; /* сверху */
+    padding-bottom: 30px; /* низу */
+    padding-left: 30px; /* слева */
+    padding-right: 30px; /* справа */
+    padding: 50px 50px; /* если указываем 2 значения, то 20px сверху и снизу, 50px слева и справа */
+    padding: 100px 100px 100px; /* 30px- сверху, 30рх справа и слева, 30рх отступ снизу */
+
+
+    background: gray;
+    background: url(http://s1.1zoom.me/big0/788/Lavandula_Fields_Blue_525422_1280x778.jpg) no-repeat;
+    background-size: 100% 100%; /*замостить картинку */
+    /* внешний отступ */
+    margin: 16px; /* со всех сторон */
+    margin: 160px 555px 36px 8px; /* отступ сверху,справа,снизу,слева */
+    margin-top: 30px; /* сверху */
+    margin-bottom: 30px; /* низу */
+    margin-left: 30px; /* слева */
+    margin-right: 30px; /* справа */
+    margin: 50px 50px; /* если указываем 2 значения, то 20px сверху и снизу, 50px слева и справа */
+    margin: 30px 10px 10px; /* 30px- сверху, 30рх справа и слева, 30рх отступ снизу */
+
+
+    width: 20px;/* выравнивание по горизонтали */ 
+    
+    
+}
+

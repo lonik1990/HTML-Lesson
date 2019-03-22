@@ -1,0 +1,25 @@
+div>p{
+	font-family:Tahoma, sans-serif;
+	font-size: 15px;
+
+}
+	
+
+.card-body{
+    width: 490px;
+    background-color: #ffe;
+    border-left: 0px;
+    height: 900x;
+	border-radius: 10px;
+	
+	background-color: gray;
+	color: gold;
+}
+
+.card{
+	border-radius: 10px;
+	background-color: gray;
+	margin:16px;
+	
+	
+}
