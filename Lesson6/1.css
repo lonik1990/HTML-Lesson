@@ -1,0 +1,70 @@
+/* Позиционирование при помощи floa t*/
+.container{
+    background: lightblue;
+    padding: 20px;
+    height 100px;
+
+}
+
+.block{
+    padding: 16px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: violet;
+    margin: 0 6px;
+    float: right;
+}
+
+/* абсолютное позиционирование */
+.iamablsolute{
+    position: absolute;
+    right: 200px;    
+    bottom: 100px;
+    padding: 16px;
+    background: green;
+    border-radius: 25px;
+    z-index:1; /* приоритет наложенгия блока, чем выше, тем приоритетнее его наложение на другой блок*/
+}
+
+.iamablsolute2{
+    position: absolute;
+    right: 250px;    
+    bottom: 100px;
+    padding: 16px;
+    background: gray;
+    border-radius: 15px;
+}
+
+body{
+    height: 1400px;
+    background-attachment: ;
+    overflow: scroll; /* разрещает скроллить*/
+    overflow: hidden; /* запрещает скроллить*/
+
+
+}
+
+.reklama{
+    background: red;
+    padding: 36px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 600px;
+    z-index:2;
+
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+iframe{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    top: 100px;
+    left: 300px;
+    padding: 16px;
+    box-shadow: 0 1px 3px;
+}
