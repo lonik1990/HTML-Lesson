@@ -1,0 +1,43 @@
+body{
+    background: gray;
+    margin: 0px;
+}
+
+@media screen and (max-width: 800px ) and (min-width: 600px) {
+    body {
+        background:green;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background:red;
+    }
+}
+
+.nav{
+    background: #222;
+}
+
+.nav a {
+    float:left;
+    color:white;
+    text-align: center;
+    padding: 16px;
+    background:lightblue;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .nav a{
+        float: none;
+        width: 100%;
+    }
+}
+
+.text{
+    height:500px;
+    background:white;
+    color:#111;
+    clear:left; /* освобождает обтекать элемент */
+}
