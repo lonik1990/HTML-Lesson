@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" /><!-- кодировка-->
+        
+        <link rel="stylesheet" type="text/css" href="1.css">
+        <title>Flex container</title> 
+    </head>    
+    <!-- 222 -->
+    <body>
+        <p>Flex-контейнер</p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <!-- 
+            Flex-derection свойства:
+            row (по умолчанию)
+            column (столбец)
+            row-reverse (в строку, ось main-перевернута)
+            column-reverse (в столбик, ось cross-перевернута)
+            initial значение по умолчанию
+            inherit наследует значение от родительского контейнера
+        -->
+        <p>Flex-derection: column</p>
+        <div class="flex-container" style="flex-direction: column;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p>Flex-derection: row-reverse</p>
+        <div class="flex-container" style="flex-direction: row-reverse;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <p>Flex-derection: column-reverse</p>
+        <div class="flex-container" style="flex-direction: column-reverse;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <!--
+            flex-wrap:
+                nowrap (по умолчанию) - элементы не переносятся на новую строку
+                wrap - элементы переносятся
+                wrap-reverse - элементы переносятся, располагаются в обратном порядке, перенос происходит снизу вверх
+        -->
+        <p>Flex-wrap: nowrap</p>
+        <div class="flex-container" style="flex-wrap: nowrap;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <p>Flex-wrap: wrap</p>
+        <div class="flex-container" style="flex-wrap: wrap;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+         <p>Flex-wrap: wrap-reverce</p>
+        <div class="flex-container" style="flex-wrap: wrap-reverse;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+
+        <p>Order example</p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div style="order:-1;">5 (order-1)</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+
+        <p>flex: 1 1 100px</p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div style="flex: 1 1 100px;">3</div>
+            <div style="flex: 1 1 100px;">4</div>
+            <div>5 </div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+
+        <p>flex-grow: 0 </p>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>flex-grow: 1 </p>
+        <div class="flex-container">
+            <div style="flex-grow:1;">1</div>
+            <div style="flex-grow:1;">2</div>
+            <div style="flex-grow:1;">3 </div>
+        </div>
+
+        <p>flex-grow: 0 0 1 </p>
+        <div class="flex-container">
+            <div style="flex-grow:0; flex-basis: 80px">1</div>
+            <div style="flex-grow:0;">2</div>
+            <div style="flex-grow:1;">3 </div>
+        </div>
+
+        <!--
+            justufy-content:
+            flex-start (значение по умолчанию) - от начала главной оси
+            flex-end - от конца главной оси
+            center - по центру оси main
+            space-between - первый блок привязывается к началу главной оси, а последний к ее окончанию. 
+                Все остальные блоки размещаются между ними так, чтобы расстояние между ними было одинаковым.
+            space-around - расстояние между смежными блоками будет одинаковым, 
+                а расстояние между крайними блоками и границами flex - контейнера будет составлять половину
+                расстояния между блоками.
+        -->
+        <p>justify-content: flex-start </p>
+        <div class="flex-container" style="justify-content: flex-start;">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+
+        <p>justify-content: flex-end </p>
+        <div class="flex-container" style="justify-content: flex-end;">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>justify-content: center </p>
+        <div class="flex-container" style="justify-content: center;">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>justify-content: space-between </p>
+        <div class="flex-container" style="justify-content: space-between;">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>justify-content: space-around </p>
+        <div class="flex-container" style="justify-content: space-around;">
+            <div>1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+
+        <!--
+            align-items:
+                flex-start - верхний край совпадает с верхней границей flex-контейнера 
+                flex-end - нижний край совпадает с нижней границей flex-контейнера
+                center - выравнивание по вертикали
+                baseline - базовые линии элементов, участвующих в выравнивании, совпадут
+                stretch (по умолчанию)- все элементы будут растягиваться по высоте (в направлении оси cross)
+        -->
+
+        <p>align-items: stretch </p>
+        <div class="flex-container" style="align-items: stretch;">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>align-items: flex-start </p>
+        <div class="flex-container" style="align-items: flex-start;">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>align-items: flex-end </p>
+        <div class="flex-container" style="align-items: flex-end;">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>align-items: center </p>
+        <div class="flex-container" style="align-items: center;">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <p>align-items: baseline </p>
+        <div class="flex-container" style="align-items: baseline;">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div>3 </div>
+        </div>
+
+        <!--
+            align-self: см. align-items
+        -->
+
+        <p>align-items: baseline </p>
+        <div class="flex-container">
+            <div style="height: 100px;">1</div>
+            <div>2</div>
+            <div style="align-self: center;">3 </div>
+        </div>
+
+         <!--
+            align-content: 
+                flex-start - строки привязываются к левойгранице контейнера
+                flex-end - строки будут привязываться к левой нижней границе
+                center - строки выравниваются по горизонтальной оси
+                space-between 
+                space-around
+                stretch - растягивает содержимое строк во вертикали
+        -->
+
+        <p>align-content: center </p>
+        <div class="flex-container" style="align-content:center; flex-wrap: wrap; height:300px;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+
+        
+        <p>align-content: space-between  </p>
+        <div class="flex-container" style="align-content:space-between ; flex-wrap: wrap; height:300px;">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+        </div>
+
+
+
+    </body>
+</html>

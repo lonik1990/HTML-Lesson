@@ -1,0 +1,26 @@
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 4px;
+    border:2px solid darkgray;
+    
+}
+
+.flex-container > div {
+        padding: 16px;
+        margin: 16px;
+        background: orange;
+        border: 2px solid red;
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+
+}
+
+p{
+    width: 600px;
+    margin: 0 auto;
+}
