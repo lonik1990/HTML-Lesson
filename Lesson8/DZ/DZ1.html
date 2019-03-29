@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" /><!-- кодировка-->
+        
+        <link rel="stylesheet" type="text/css" href="11.css">
+        <title>Flex container</title> 
+    </head>    
+    <!-- 222 -->
+    <body>
+        
+        <div class="flex-container" style="flex-direction:column;">
+            <div><h1>Шон Коннери</h1></div>
+			
+			<div class="nav">
+				<a href="#bio">Биография </a>
+				<a href="#job">Творчество </a>
+				<a href="#family">Личная жизнь </a>
+				<a href="#career">Фильмография </a>
+			</div>
+		</div>
+		
+		<div class="flex-container1">
+            <div id="bio" class="text"> 
+				<div style="flex-grow:1;">Биография <p></p>
+					<img src="data:image/jpeg;base64,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" width="220px">
+					Родился 25 августа 1930 года в Эдинбурге, Шотландия.Настоящее имя - Томас. 
+					Сын шофера и домохозяйки, шел к своей профессии весьма извилистым путем. 
+					Бросив школу в 15 лет, служил на флоте, где стал чемпионом по боксу, после 
+					чего успел побывать каменщиком, телохранителем, шофером, лакировщиком гробов, 
+					манекенщиком.Дебютировал на провинциальной сцене в 1951 году. Окончил 
+					Эдинбургскую школу искусств,после чего с 1953 года в течение нескольких лет 
+					играл самые разнообразные роли в репертуарных театрах. Снимается в кино с 
+					1955 года. Однако лишь с появлением на экране первой ленты "бондовской серии"
+					- "Доктор Но" (1962), где он предстал в качестве "секретного агента 007 на 
+					службе Ее Величества", Шон Коннери стал известен всему миру.
+				</div>
+			</div>
+			
+            <div id="job" class="text"> 
+				<div style="flex-grow:1;">Творчество <p></p>
+					В самом начале трудового пути Шон попробовал себя в профессии молочника, а 
+					затем вступил в ряды Королевского военно-морского флота. Во время службы он 
+					сделал две татуировки: «Mum and Dad» («Мать и Отец») и «Scotland Forever» 
+					(«Шотландия навсегда»). Вскоре Коннери был списан со службы по причине язвенной 
+					болезни, от которой страдало в его семье большинство мужчин.Молодой Шон начал 
+					активно искать новое призвание: побывал водителем грузовика, спасателем в 
+					купальнях, чернорабочим, натурщиком в Эдинбургском колледже искусств и даже 
+					полировщиком гробов. Работа моделью приносила ему пятнадцать шиллингов в час. 
+					Позднее один из студентов-художников вспоминал Коннери как очень скромного, 
+					робкого и безупречного красавца. В восемнадцать лет Шон увлекся бодибилдингом 
+					и занял третье место на международных состязаниях культуристов «Мистер Вселенная», 
+					проходивших в 1950 году. Другим серьезным увлечением Коннери был футбол. Ему так 
+					ярко удавалось проявлять себя на поле, что он чуть не принял заманчивое предложение 
+					от серьезной футбольной команды. Единственное, что остановило Шона, – осознание 
+					недолговечности спортивной карьеры, которая в лучшем случае закончится в тридцать
+					лет, а ведь на тот момент ему уже исполнилось двадцать три года.После долгих 
+					скитаний и смятений Коннери, наконец, загорелся идеей построить актерскую карьеру. 
+					По его же признанию, это оказалось самым разумным из всех принятых им решений. 
+					Кинематографический дебют Коннери состоялся в музыкальной комедии 1954 года 
+					«Сирень весной», снятой режиссером Хербертом Уилкоксом. Имя дебютанта даже не 
+					появилось в титрах. Его первой заметной работой стала роль в военной драме Льюиса 
+					Аллена «Другое время, другое место», вышедшей на экраны спустя четыре года. 
+					В настоящее время фильмография Шона Коннери насчитывает порядка девяносто проектов. 
+					Одна из последних работ звезды на сегодняшний день – озвучивание персонажа из 
+					анимационного короткометражного фильма «Ветеринар Сэр Билли» (2012), рассказывающего 
+					об эксцентричном ветеринаре, который практикует в шотландской деревне. 
+				</div>
+			</div>
+        </div>
+		
+		<div class="flex-container2">
+            <div id="family" class="text"> 
+				<div style="flex-grow:1;">Личная Жизнь <p></p>
+					В личной жизни Шона Коннери было два длительных брака, первый из которых он заключил 
+					с актрисой Дайан Силенто в 1962 году. Они прожили вместе одиннадцать лет и разошлись 
+					из-за того, что жена Шона Коннери ударилась в религию, которая поглотила ее настолько
+					сильно, что она совсем отошла от светской жизни.В этом браке у актера родился сын 
+					Джейсон Коннери, который, повзрослев, тоже стал актером и весьма успешным.
+			     </div>
+			</div>
+			
+			<div id="career" class="text">
+				<div style="flex-grow:1;">Фильмография <p></p>  
+					Sir Billi The Vet (мультфильм) 
+					James Bond 007: From Russia with Love (VG) 
+					Лига выдающихся джентльменов 
+					Найти Форрестера 
+					Западня  
+					Играя сердцем 
+					Мстители  
+					Сердце дракона 
+					Скала 
+					Первый рыцарь 
+					Правое дело 
+					Хороший человек в Африке 
+					Восходящее солнце  
+					Знахарь  
+					Робин Гуд: принц воров  
+					Горец 2 - Ускорение 
+					Русский дом  
+					Охота за «Красным Октябрем» 
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

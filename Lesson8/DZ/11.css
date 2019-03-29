@@ -1,0 +1,90 @@
+
+/*
+@media (max-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей 
+  .content-wrapper {padding: 0;} /* основное содержимое занимает всё пространство окна 
+}
+*/
+
+
+
+.nav a {
+    float:left;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    
+    display: block;
+}
+
+.flex-container{
+    display: -webkit-flex;
+   
+    width: 600px;
+    margin: 10px auto;
+    background: gray;
+    border-radius: 4px;
+    
+    
+}
+
+.flex-container > div {
+        padding: 16px;
+        margin: 16px;
+        background: gray;
+        
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+
+}
+
+.flex-container1{
+    display: -webkit-flex;
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 4px;
+
+    
+}
+
+
+
+.flex-container1 > div {
+        padding: 16px;
+        margin: 16px;
+        background: gray;
+        
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+        width: 50%;
+
+}
+
+.flex-container2{
+    display: -webkit-flex;
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 4px;
+    
+    
+}
+
+
+
+.flex-container2 > div {
+        padding: 16px;
+        margin: 16px;
+        background: gray;
+        width: 50%;
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+
+}
+
+
