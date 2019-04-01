@@ -1,0 +1,55 @@
+/* Позиционирование при помощи float*/
+.container{
+    background: red;
+	width: 1848px;
+	border-radius: 10px;
+    margin-left:40px;
+    height:600px;
+	
+
+}
+
+.chat{
+    width: 1846px;
+    text-align: right;
+    color: white;
+    background: red;
+  
+    height:400px;
+	overflow: scroll; /* разрешает скроллить*/
+	overflow-x:hidden;
+	
+}
+
+.block1{
+    padding: 16px;
+    width: 850px;
+    text-align: center;
+	color: black;
+	
+    background: gray;
+    margin: 0 auto;
+	overflow: hidden; /* запрещает скроллить*/
+	border: 2px solid black;
+    border-radius: 20px;
+	margin-top:10px;
+	color: white;	
+}
+
+.qq{
+	background:red;
+	position:absolute;
+	width: 936px;
+	left: 48px;
+	
+}
+
+.qqq{
+	position:absolute;
+	
+	background:red;
+	left: 960px;
+	width: 936px;
+	z-index:2;
+	text-align: right;
+}

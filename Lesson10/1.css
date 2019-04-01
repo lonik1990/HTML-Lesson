@@ -1,0 +1,144 @@
+.anim {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    animation-name: example1; /* название анимации */
+    animation-duration: 3s; /* продолжительность анимации*/
+}
+
+.anim2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(45, 160, 74);
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 250px;
+    animation-name: example2; /* название анимации */
+    animation-duration: 7s; /* продолжительность анимации*/
+    animation-delay: 3s; /* задержка анимации*/
+    animation-iteration-count: 3; /*повторение анимации*/
+    animation-direction: reverse; /* анимация начинается с конца*/
+    animation-direction: alternate; /* анимация идет с начала в конец,потом с конца в начало*/
+    animation-direction: alternate-reverse; /* анимация идет с конца в начало,потом с начала в конец*/
+
+    
+}
+
+@keyframes example1 {
+    from {
+        background: red;
+    }
+    to {
+        background: yellow;
+    }
+
+}
+@keyframes example2 {
+    0% {                                  /* проценты берутся от начала*/
+        background: green;
+    }
+
+    15% {
+        width: 100px;
+    }
+    37% {
+        height:50px;
+        background: yellow;
+    }
+    56% {
+        width: 200px;
+        left: 50px;
+    }
+    100% {
+        left: 0px;
+        height: 200px;
+        background: green;
+    }
+}
+
+.container {
+    position: absolute;
+    right: 300px;
+    padding: 16px;
+
+}
+
+.container > div {
+    width: 100px;
+    height: 50px;
+    background: lightgreen;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+.m1{
+    animation-timing-function: ease; /* po umol4aniu*/
+}
+
+.m2{
+    animation-timing-function: linear; /* lineinaa*/
+}
+
+.m3{
+    animation-timing-function: ease-in; /*medlenii start*/
+}
+
+.m4{
+    animation-timing-function: ease-out; /*bistrii start. medl torm*/
+}
+
+.m5{
+    animation-timing-function: ease-in-out; /*medl start i medl finish*/
+}
+
+.m6{
+    animation-timing-function: cubic-bezier(1, 0.02, 0.05, 1);/*придает как бы ускорение как эффект ската с горы*/
+}
+
+
+body{
+    background: linear-gradient(50deg, blue, lightblue, yellow );
+    
+    background: linear-gradient(to left top, black,gray);
+    background: radial-gradient(circle,red,green);
+    background: radial-gradient(at top, yellow, lightblue);
+    animation-name: background-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+html, body{
+    height:100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@keyframes move {
+    from {                                
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+}
+}
+
+@keyframes background-animation {
+    from{
+        background: linear-gradient(to right bottom, lightgreen, lightblue);
+    }
+    to{
+        background: linear-gradient(to right bottom, yellow, green);
+    }
+}
