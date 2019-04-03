@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8" /><!-- кодировка-->
+        
+        <link rel="stylesheet" type="text/css" href="1.css">
+        <title>Flex container</title> 
+    </head>    
+    <!-- 222 -->
+    <body>        
+
+        <div class="dropdown">
+            <button class="menu-btn">Menu</button>
+                <div class="child">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                    <a href="#">Item </a>
+                </div>
+        </div>
+
+        <div class="dropdown">
+                <button class="menu-btn icon">Menu</button>
+                
+                    <div class="child">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                        <a href="#">Item </a>
+                    </div>
+            </div>
+            
+
+
+
+        <form action="#" method="get">
+            <span>Not correct</span>
+            <input type="text" />
+
+            <label for="text">Its correct</label>
+            <input 
+                placeholder="enter your name"
+                required id="text" name="firstName" type="text" />
+
+            <label for="number">Number</label>
+            <input 
+                placeholder="Enter your age"
+                required max="1000" min="1" id="number" name="age" type="number" />
+
+            <!-- Регулярные выражения -->
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}" />
+
+
+            <input type="submit" value="OK"/>
+
+            <!---->
+        </form>       
+    </body>
+</html>
