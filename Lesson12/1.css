@@ -1,0 +1,54 @@
+input:valid {
+    border:1px solid green !important;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:placeholder-shown {
+    border: 1px solid gray;
+}
+
+.dropdown{
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.menu-btn {
+    background: black;
+    color:#fff;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.child {
+    display: none;
+    background: black;
+    min-width: 80px;
+    max-width: 120px;
+    position: absolute;
+    transition: all 2s; /* распространяется на все свойства */
+    height:0;
+}
+
+.child > a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none; /* убирает подчеркивание*/
+
+}
+
+.dropdown:hover .child {
+    display: block;
+    height: auto;
+}
+
+.icon {
+    background: #fff url(http://download.seaicons.com/icons/icons8/windows-8/512/Data-List-icon.png)
+    no-repeat center;
+    background-size: 32px 32px; 
+
+}
